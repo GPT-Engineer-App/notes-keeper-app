@@ -35,7 +35,7 @@ const Index = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name: newNote.trim(), content: newNote.trim() }),
+        body: JSON.stringify({ content: newNote.trim() }),
       });
       if (response.ok) {
         fetchNotes();
